@@ -1,6 +1,6 @@
 package pl.easysnup.mixin;
 
-import net.minecraft.client.render.item.ItemModelManager;
+import net.minecraft.client.item.ItemModelManager;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
