@@ -51,7 +51,7 @@ public enum Costume {
     /** "&7Kostium &bsnupa" */
     public String title() { return "&7Kostium " + nameLegacy; }
 
-    public Text name() { return Legacy.parse(title()); }
+    public Text displayName() { return Legacy.parse(title()); }
 
     public static Costume byId(String id) {
         for (Costume c : values()) if (c.id.equals(id)) return c;
@@ -73,7 +73,7 @@ public enum Costume {
     /** Pełny tooltip: nazwa + opis. */
     public List<Text> fullTooltip(boolean worn) {
         List<Text> out = new ArrayList<>();
-        out.add(name());
+        out.add(displayName());
         out.addAll(tooltip(worn));
         return out;
     }
