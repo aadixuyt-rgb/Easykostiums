@@ -33,7 +33,7 @@ public final class Labels {
             Costume c = Wardrobe.groundCostume(item.getStack());
             if (c == null) continue;
             if (e.squaredDistanceTo(mc.player) > MAX_DISTANCE * MAX_DISTANCE) continue;
-            draw(mc, m, vcp, cam, e.getLerpedPos(td), c.name());
+            draw(mc, m, vcp, cam, e.getLerpedPos(td), c.displayName());
             drew = true;
         }
         if (drew && vcp instanceof VertexConsumerProvider.Immediate imm) imm.draw();
