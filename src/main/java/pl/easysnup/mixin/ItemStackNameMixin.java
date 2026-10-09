@@ -16,7 +16,7 @@ public abstract class ItemStackNameMixin {
         ItemStack self = (ItemStack) (Object) this;
         Costume c = Wardrobe.costumeOf(self);
         if (c != null) {
-            cir.setReturnValue(c.name());
+            cir.setReturnValue(c.displayName());
             return;
         }
         Text armor = Wardrobe.armorNameFor(self);   // "Adixu armor" / "Armor snupika"
